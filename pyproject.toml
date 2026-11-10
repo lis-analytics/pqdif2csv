@@ -26,3 +26,8 @@ pqdif2csv = "pqdif2csv.__main__:main"
 
 [tool.setuptools]
 packages = ["pqdif2csv"]
+
+[project.urls]
+Homepage = "https://github.com/lis-analytics/pqdif2csv"
+Issues = "https://github.com/lis-analytics/pqdif2csv/issues"
+Company = "https://lisanalytics.net"
