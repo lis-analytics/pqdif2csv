@@ -1,21 +1,14 @@
-# pqdif2csv
-
-Read PQDIF power quality files (IEEE Std 1159.3) in pure Python and export them to CSV
-or Excel. No vendor software, no .NET runtime, one dependency (NumPy).
-
-PQDIF is the standard export format of power quality meters: waveform captures, 10-minute
-and 3-second logs, harmonics, flicker (Pst/Plt), voltage events. If you have `.pqd` files
-and want them in a spreadsheet, a notebook or your own scripts, this is for you.
-
 ```
-pip install pqdif2csv            # add [excel] for Excel output: pip install "pqdif2csv[excel]"
+pip install git+https://github.com/lis-analytics/pqdif2csv
 pqdif2csv meter_week.pqd                       # -> meter_week_csv/  (one CSV per observation)
 pqdif2csv meter_week.pqd --layout long         # one row per value, easy to filter or pivot
 pqdif2csv meter_week.pqd --excel week.xlsx     # also write an Excel workbook
 pqdif2csv meter_week.pqd --summary             # list observations, channels and series
 ```
 
-Until the PyPI release, install from a checkout: `pip install .`
+For Excel output: `pip install "pqdif2csv[excel] @ git+https://github.com/lis-analytics/pqdif2csv"`
+
+Not yet on PyPI.
 
 ## What you get
 
