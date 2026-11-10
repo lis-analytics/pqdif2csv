@@ -35,8 +35,7 @@ convert("meter_week.pqd", "out", layout="both")
 
 ## Decisions you should know about
 
-- **Dates.** PQDIF counts days from 1899-12-30, as the reference implementations do. The
-  standard's text says "January 1, 1900", which would shift every date by two days.
+- - **Dates.** PQDIF timestamps count days from 1899-12-30, as the reference implementations do. Some descriptions of the format give January 1, 1900, which would shift every date by two days.
 - **Scaling.** Scale and offset are applied only when the series is stored as scaled.
 - **CT/PT ratios.** Applied only when the file's monitor settings say to use transducer
   ratios and give both sides; each channel records whether a ratio was applied.
